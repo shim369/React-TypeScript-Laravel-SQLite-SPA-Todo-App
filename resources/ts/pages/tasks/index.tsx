@@ -3,13 +3,13 @@ import axios from "axios"
 
 const TaskPage: React.VFC = () => {
 
-    // const getTasks = async () => {
-    //     const { data } = await axios.get('api/tasks')
-    //     console.log(data);
-    // }
-    // useEffect(() => {
-    //     getTasks()
-    // })
+    const getTasks = async () => {
+        const { data } = await axios.get('api/tasks')
+        console.log(data);
+    }
+    useEffect(() => {
+        getTasks()
+    })
 
     return (
         <>

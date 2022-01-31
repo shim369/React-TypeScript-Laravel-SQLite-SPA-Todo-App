@@ -1,7 +1,7 @@
 import React from "react"
 import {
     BrowserRouter,
-    Switch,
+    Routes,
     Route,
     Link
 } from "react-router-dom"
@@ -20,17 +20,11 @@ const Router = () => {
                         <li><span>ログアウト</span></li>
                     </ul>
                 </header>
-                <Switch>
-                    <Route path="/help">
-                        <HelpPage />
-                    </Route>
-                    <Route path="/login">
-                        <LoginPage />
-                    </Route>
-                    <Route path="/">
-                        <TaskPage />
-                    </Route>
-                </Switch>
+                <Routes>
+                    <Route path="/help" element={<HelpPage/>} />
+                    <Route path="/login" element={<LoginPage/>} />
+                    <Route path="/" element={<TaskPage/>} />
+                </Routes>
         </BrowserRouter>
     )
 }
