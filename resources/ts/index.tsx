@@ -6,3 +6,4 @@ ReactDom.render(
     <App />,
     document.getElementById('app')
 )
+export {Task} from "./types/Task";

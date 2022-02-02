@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Task;
 use App\Http\Requests\TaskRequest;
-use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
@@ -51,7 +50,7 @@ class TaskController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \TaskRequest  $request
+     * @param  TaskRequest  $request
      * @param  \App\Models\Task  $task
      * @return \Illuminate\Http\JsonResponse
      */
